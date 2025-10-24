@@ -1,0 +1,153 @@
+* {
+
+    font-family: sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    background-color: rgb(212, 231, 247);
+
+
+}
+
+h1 {
+
+    font-size: 2vw;
+}
+
+h3 {
+
+    font-size: 1vw;
+
+}
+
+div {
+    width: 60vw;
+    height: 70vw;
+    margin: auto;
+
+}
+
+table {
+
+    table-layout: fixed;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-width: 2px;
+
+}
+
+th {
+
+    font-size: 1vw;
+    background-color: white;
+
+}
+
+.horario {
+
+    background-color: white;
+    font-size: 1.2vw;
+    vertical-align: top;
+
+
+}
+
+tr {
+
+    height: 5%;
+
+}
+
+td {
+
+    font-size: 60%;
+    background-color: rgb(14, 112, 129);
+
+}
+
+.recreo {
+
+    height: 1%;
+
+}
+
+.recreo td {
+
+
+    background-color: white;
+
+}
+
+
+
+.dwes {
+
+    background-color: orange;
+}
+
+.diw {
+
+    background-color: bisque;
+    
+
+}
+
+.ip {
+
+    background-color: blueviolet;
+
+}
+
+.da {
+
+    background-color: aqua;
+
+}
+
+.dwec {
+
+    background-color: green;
+
+}
+
+.ingles {
+
+    background-color: rgb(172, 124, 218);
+
+}
+
+.sa {
+
+    background-color: rgb(179, 118, 84);
+
+}
+
+.pi {
+
+    background-color: rgb(127, 197, 255);
+
+}
+
+.da {
+
+    background-color: rgb(194, 54, 54);
+}
+
+.tc {
+
+    opacity: 0.75;
+}
+
+ul {
+
+    list-style-position: inside;
+    list-style-image: url("icono mail.png");
+    
+
+}
+
+li, a {
+
+    font-size: 1vw;
+}
+
