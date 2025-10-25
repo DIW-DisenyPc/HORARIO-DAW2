@@ -1,165 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Horario 2º DAW</title>
     <!--Incluimos la fuente de los iconos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <h1 id="titulo">Horario 2º DAW</h1>
     <h3 id="sub-titulo">Jaime Sánchez Chirivella</h3>
 
     <div class="tabla">
+      <table>
+        <!-- Empiza la tabla-->
 
-        <table> <!-- Empiza la tabla-->
+        <thead>
+          <!-- Empiza la cabecera de la tabla-->
 
-            <thead> <!-- Empiza la cabecera de la tabla-->
+          <tr>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <!-- Termina la cabecera de la tabla-->
 
-                <tr>
+        <tbody>
+          <!-- Empiza el cuerpo de la tabla-->
 
-                    <th></th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miércoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
+          <!-- como hay una tutoria que, segun el horario colgado en aules, ocupa 1 hora
+           mas el recreco mas media hora, he tenido que dividir el horario en medias horas
+           despues para que las celdas ocupen una hora entere las he unido y he tenido que 
+           dejar filas vacias para que el efecto fuera el correcto.
+           La tutoria en cuestion es el viernes a las 18:02 de Desarrollo Web en Entorno Servidor-->
 
-                </tr>
+          <!-- ************************************************************************************  -->
 
-            </thead> <!-- Termina la cabecera de la tabla-->
+          <tr>
+            <td rowspan="2" class="horario">11:15</td>
+            <!--La primera para las horas con clase horario para darle su propio css-->
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="diw tc">Diseño de Interfaces</td>
+            <!--Cada una de las tutorias, clase tc para dar transparencia-->
+            <td rowspan="2"></td>
+          </tr>
+          <tr></tr>
 
-            <tbody> <!-- Empiza el cuerpo de la tabla-->
+          <!-- ************************************************************************************  -->
 
-                <tr>
-                    <td class = "horario">11:15</td> <!--La primera para las horas con clase horario para darle su propio css-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class = "diw tc">Diseño de Interfaces</td> <!--Cada una de las tutorias, clase tc para dar transparencia-->
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class = "horario">12:10</td>
-                    <td></td>
-                    <td class ="ingles tc">Ingles</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr class ="recreo"> <!--Para los  poder darle su propio css-->
-                    <td  class = "horario">13:05</td>
-                    <td colspan = "5" >RECREO</td> <!-- Unimos todas las celdas de la fila recreo-->
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">13:25</td>
-                    <td></td>
-                    <td rowspan="2" class = "dwec">Desarrollo web  Cliente</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class = "horario">14:20</td>
-                    <td class = "dwes">Desarrollo Web  servidor</td>
-                    <td></td>
-                    <td class = "dael tc">Digitalización aplicada</td>
-                    <td></td>
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">15:15</td>
-                    <td rowspan="2" class = "diw">Diseño de Interfaces</td> <!--Usamos rowspan para unir varias horas para una totoria-->
-                    <td class = "sa tc">Sostenibilidad aplicada</td>
-                    <td class = "dwes tc">Desarrollo Web servidor</td>
-                    <td></td>
-                    <td class = "dwec">Desarrollo web  Cliente</td>
-                </tr>
-                <tr>
-                    <td class = "horario">16:10</td>
-                    <td  class = "pi">Proyecto Intermodular</td>
-                    <td></td>
-                    <td class = "ip tc">Itirenario Personal</td>
-                    <td class = "dwes tc">Desarrollo Web servidor</td>
-                    <!--<td></td>-->
-                </tr>
-                <tr class ="recreo">
-                    <td class = "horario">17:05</td>
-                    <td colspan = "5" >RECREO</td>
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">17:25</td>
-                    <td class = "ip">Itirenario Personal</td>
-                    <td  class = "pi">Proyecto Intermodular</td>
-                    <td></td>
-                    <td></td>
-                    <td  class = "dwec tc">Desarrollo web  Cliente</td>
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">18:20</td>
-                    <td class = "da tc">Despliegue de Aplicaciones</td>
-                    <td></td>
-                    <td></td>
-                    <td class = "da ">Despliegue de Aplicaciones</td>
-                    <td rowspan="3" class = "dwes tc">Desarrollo Web servidor</td>
-                </tr>
-                <tr class ="recreo">
-                    <td class = "horario">17:05</td>
-                    <td colspan = "4" >RECREO</td>
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">19:35</td>
-                    <td></td>
-                    <td class = "pi tc">Proyecto Intermodular</td>
-                    <td class = "ingles tc">Ingles</td>
-                    <td class = "da ">Despliegue de Aplicaciones</td>
-                    
-                    
-                    
-                    
-                </tr>
-                <tr>
-                    <td class = "horario">20:30</td>
-                    <td class = "dwec tc">Desarrollo web Cliente</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>   
-                
-            </tbody> <!-- Termina el cuerpo de la tabla-->
+          <tr>
+            <td rowspan="2" class="horario">12:10</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="ingles tc">Ingles</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr></tr>
 
-        </table> <!-- Fin de la tabla-->
+          <!-- ************************************************************************************  -->
 
-        
+          <tr class="recreo">
+            <!--Para los  poder darle su propio css-->
+            <td class="horario">13:05</td>
+            <td colspan="5">RECREO</td>
+            <!-- Unimos todas las celdas de la fila recreo-->
+          </tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">13:25</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="dwec">Desarrollo web Cliente</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">14:20</td>
+            <td rowspan="2" class="dwes">Desarrollo Web servidor</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="dael tc">Digitalización aplicada</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">15:15</td>
+            <td rowspan="4" class="diw">Diseño de Interfaces</td>
+            <!--Usamos rowspan para unir varias horas para una totoria-->
+            <td rowspan="2" class="sa tc">Sostenibilidad aplicada</td>
+            <td rowspan="2" class="dwes tc">Desarrollo Web servidor</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="dwec">Desarrollo web Cliente</td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">16:10</td>
+            <td rowspan="2" class="pi">Proyecto Intermodular</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="ip tc">Itirenario Personal</td>
+            <td rowspan="2" class="dwes tc">Desarrollo Web servidor</td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr class="recreo">
+            <td class="horario">17:05</td>
+            <td colspan="5">RECREO</td>
+          </tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">17:25</td>
+            <td rowspan="2" class="ip">Itirenario Personal</td>
+            <td rowspan="2" class="pi">Proyecto Intermodular</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="dwec tc">Desarrollo web Cliente</td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">18:20</td>
+            <td rowspan="2" class="da tc">Despliegue de Aplicaciones</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="da">Despliegue de Aplicaciones</td>
+            <td rowspan="4" class="dwes tc">Desarrollo Web servidor</td>
+          </tr>
+          <tr></tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr class="recreo">
+            <td class="horario">17:05</td>
+            <td colspan="4">RECREO</td>
+          </tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">19:35</td>
+            <td rowspan="2"></td>
+            <td rowspan="2" class="pi tc">Proyecto Intermodular</td>
+            <td rowspan="2" class="ingles tc">Ingles</td>
+            <td rowspan="2" class="da">Despliegue de Aplicaciones</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+
+          <!-- ************************************************************************************  -->
+
+          <tr>
+            <td rowspan="2" class="horario">20:30</td>
+            <td rowspan="2" class="dwec tc">Desarrollo web Cliente</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr></tr>
+        </tbody>
+        <!-- Termina el cuerpo de la tabla-->
+      </table>
+      <!-- Fin de la tabla-->
     </div>
-    <div class = "lista"> <!--div Para la lista de correos-->
-        <h3>Listado de correos de los profesores de las asignaturas</h3>
-        <ul><!--Usamos una lista no ordenada-->
-            <li>Carlos Millan Belda (DIW) <a href="mailto:c.millanbelda@edu.gva.es">c.millanbelda@edu.gva.es</a></li>
-            <li>Ana Zahina Fernandez (IP) <a href="mailto:az.fernandezcarras@edu.gva.es">az.fernandezcarras@edu.gva.es</a></li>
-            <li>Celia Salmerón Buendía (Ingles) <a href="mailto:c.salmeronbuendia@edu.gva.es">c.salmeronbuendia@edu.gva.es</a></li>
-            <li>David Tur Anmateu (DWES / Proyecto) <a href="mailto:d.tursanmateu@edu.gva.es">d.tursanmateu@edu.gva.es</a></li>
-            <li>José Manuel Gras (DWEC) <a href="mailto:jm.graslopez@edu.gva.es">jm.graslopez@edu.gva.es</a></li>
-            
-           <!--En cada elemento le añadimos una etiqueta a para poner el link solo a la parte de la direccion email-->
-            
-        </ul>
+    <div class="lista">
+      <!--div Para la lista de correos-->
+      <h3>Listado de correos de los profesores de las asignaturas</h3>
+      <ul>
+        <!--Usamos una lista no ordenada-->
+        <li>
+          Carlos Millan Belda (DIW)
+          <a href="mailto:c.millanbelda@edu.gva.es">c.millanbelda@edu.gva.es</a>
+        </li>
+        <li>
+          Ana Zahina Fernandez (IP)
+          <a href="mailto:az.fernandezcarras@edu.gva.es"
+            >az.fernandezcarras@edu.gva.es</a
+          >
+        </li>
+        <li>
+          Celia Salmerón Buendía (Ingles)
+          <a href="mailto:c.salmeronbuendia@edu.gva.es"
+            >c.salmeronbuendia@edu.gva.es</a
+          >
+        </li>
+        <li>
+          David Tur Anmateu (DWES / Proyecto)
+          <a href="mailto:d.tursanmateu@edu.gva.es">d.tursanmateu@edu.gva.es</a>
+        </li>
+        <li>
+          José Manuel Gras (DWEC)
+          <a href="mailto:jm.graslopez@edu.gva.es">jm.graslopez@edu.gva.es</a>
+        </li>
 
-
-    </div> 
-    
-
-</body>
-
+        <!--En cada elemento le añadimos una etiqueta a para poner el link solo a la parte de la direccion email-->
+      </ul>
+    </div>
+  </body>
 </html>

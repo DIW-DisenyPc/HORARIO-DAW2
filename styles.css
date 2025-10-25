@@ -32,7 +32,7 @@ h3 { /* Tamaño para los subtitulo y titulos menores de la web*/
 .tabla { /* Alto solo para el div de la tabla necesario 
     para que la tabla tenga la proporcion deseada*/
 
-    height: 70vw;
+    height: 90vw;
 }
 
 table {
@@ -69,7 +69,7 @@ th { /* Definimos las propiedades de la cabecera*/
 
 tr { 
 
-    height: 5%; /* Con esto conseguimos que la altura de las celdas
+    height: 2.5%; /* Con esto conseguimos que la altura de las celdas
      sean la apropiada para la proporcion de la tabla*/
 
 }
@@ -83,7 +83,7 @@ td {
 
 .recreo { /* Hacemos mas pequeñas las celdas de los recreos por que dura menos que un clase*/
 
-    height: 1%;
+    height: 0.60%;
 
 }
 
@@ -155,6 +155,12 @@ td {
 }
 
 /* Termina la tabla, empezamos con la lista */
+
+.lista {
+
+    margin-top: 2vw;
+
+}
 
 ul {
 
