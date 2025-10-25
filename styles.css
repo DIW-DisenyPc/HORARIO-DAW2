@@ -89,7 +89,7 @@ td {
 /* Para que los textos quepan en las celdas*/
     font-size: 60%;
  /* Color de las celdas sin tutotia*/   
-    background-color: rgb(14, 112, 129);
+    background-color: rgb(129, 186, 196);
 
 }
 
@@ -191,6 +191,9 @@ ul {
 
     list-style: none;
     /* quitamos la decoracion de la lista */
+    margin: 0 25vw 5vw 0 ;
+
+    
 
 
 }
@@ -215,4 +218,6 @@ a {
     /* tamaño para el contenido de las listas */
 
     font-size: 1vw;
+    text-align: left;
+    
 }
