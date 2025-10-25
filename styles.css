@@ -1,34 +1,45 @@
-* {
+* 
+ /* definimod un estilo generico para toda la web que sera sobreescrito cuando haga falta*/
+{
 
     font-family: sans-serif;
-    font-size: 2vw;
+    /* El tamaño de la fuente lo marcomos con vw para que se ajuste en relacion a la ventan*/
+    font-size: 2vw; 
     text-align: center;
-    background-color: rgb(212, 231, 247);
+    /* Solo para que se vena las zonas blancas de la tabla*/
+    background-color: rgb(212, 231, 247); 
 
 
 }
 
-h1 {
+h1 { /* Tamaño para todos los titulos principales que pudiera tener la web*/
 
     font-size: 2vw;
 }
 
-h3 {
+h3 { /* Tamaño para los subtitulo y titulos menores de la web*/
 
     font-size: 1vw;
 
 }
 
-div {
+.tabla, .lista { /* Ancho para ambos divs*/
     width: 60vw;
-    height: 70vw;
     margin: auto;
 
 }
 
+.tabla { /* Alto solo para el div de la tabla necesario 
+    para que la tabla tenga la proporcion deseada*/
+
+    height: 70vw;
+}
+
 table {
 
-    table-layout: fixed;
+    /*table-layout: fixed;  Funciona igual sin esata parte */
+
+    /* centramso la tabla y le decimos que ocupe todo su padre, el div tabla*/
     margin: auto;
     height: 100%;
     width: 100%;
@@ -36,49 +47,54 @@ table {
 
 }
 
-th {
+th { /* Definimos las propiedades de la cabecera*/
 
     font-size: 1vw;
     background-color: white;
 
 }
 
-.horario {
+.horario { /* Definimos el estilo del horario*/
 
     background-color: white;
     font-size: 1.2vw;
-    vertical-align: top;
+    /* Ya que las celdas empiezan en la hora que les marca el horario, 
+    se alinea en top para que marque el principio de la celda*/
+    vertical-align: top; 
 
 
 }
 
-tr {
+/*Estilos de las celdas interiores*/
 
-    height: 5%;
+tr { 
+
+    height: 5%; /* Con esto conseguimos que la altura de las celdas
+     sean la apropiada para la proporcion de la tabla*/
 
 }
 
 td {
 
-    font-size: 60%;
-    background-color: rgb(14, 112, 129);
+    font-size: 60%; /* Para que los textos quepan en las celdas*/
+    background-color: rgb(14, 112, 129); /* Color de las celdas sin tutotia*/
 
 }
 
-.recreo {
+.recreo { /* Hacemos mas pequeñas las celdas de los recreos por que dura menos que un clase*/
 
     height: 1%;
 
 }
 
-.recreo td {
+.recreo td { /* Color de fondo para las celdas de los recreos*/
 
 
     background-color: white;
 
 }
 
-
+/*-------Cada una de los diferentes modulos-------*/
 
 .dwes {
 
@@ -98,7 +114,7 @@ td {
 
 }
 
-.da {
+.dael {
 
     background-color: aqua;
 
@@ -133,32 +149,32 @@ td {
     background-color: rgb(194, 54, 54);
 }
 
-.tc {
+.tc { /* Transparencia para las tutorias colectivas*/
 
     opacity: 0.75;
 }
 
+/* Termina la tabla, empezamos con la lista */
+
 ul {
 
-   /* list-style-position: inside;
-    list-style-image: url("icono mail.png");*/
-    list-style: none;
+    list-style: none; /* quitamos la decoracion de la lista */
     
 
 }
 
-li::before {
+li::before { /* estilos para añadir el icono de email */
 
-    content: '\f0e0';
-    font-family: "Font Awesome 6 free";
-    font-weight: 900;
+    content: '\f0e0'; /* iocono de email */
+    font-family: "Font Awesome 6 free"; /* Le indicamos de que fuente */
+    font-weight: 900; /* Para que sea mas resaltado */ 
     margin-right: 0.5em;
     margin-right: 10px;
     font-size: 1em;
     
 }
 
-li, a {
+li, a { /* tamaño para el contenido de las listas */
 
     font-size: 1vw;
 }
