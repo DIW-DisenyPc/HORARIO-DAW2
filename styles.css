@@ -1,35 +1,40 @@
-* 
- /* definimod un estilo generico para toda la web que sera sobreescrito cuando haga falta*/
-{
+/* definimod un estilo generico para toda la web que sera sobreescrito cuando haga falta*/
+
+* {
 
     font-family: sans-serif;
     /* El tamaño de la fuente lo marcomos con vw para que se ajuste en relacion a la ventan*/
-    font-size: 2vw; 
+    font-size: 2vw;
     text-align: center;
     /* Solo para que se vena las zonas blancas de la tabla*/
-    background-color: rgb(212, 231, 247); 
+    background-color: rgb(212, 231, 247);
 
 
 }
 
-h1 { /* Tamaño para todos los titulos principales que pudiera tener la web*/
+h1 {
+    /* Tamaño para todos los titulos principales que pudiera tener la web*/
 
     font-size: 2vw;
 }
 
-h3 { /* Tamaño para los subtitulo y titulos menores de la web*/
+h3 {
+    /* Tamaño para los subtitulo y titulos menores de la web*/
 
     font-size: 1vw;
 
 }
 
-.tabla, .lista { /* Ancho para ambos divs*/
+.tabla,
+.lista {
+    /* Ancho para ambos divs*/
     width: 60vw;
     margin: auto;
 
 }
 
-.tabla { /* Alto solo para el div de la tabla necesario 
+.tabla {
+    /* Alto solo para el div de la tabla necesario 
     para que la tabla tenga la proporcion deseada*/
 
     height: 90vw;
@@ -44,50 +49,69 @@ table {
     height: 100%;
     width: 100%;
     border-width: 2px;
+    
 
 }
 
-th { /* Definimos las propiedades de la cabecera*/
+th {
+    /* Definimos las propiedades de la cabecera*/
 
     font-size: 1vw;
     background-color: white;
 
 }
 
-.horario { /* Definimos el estilo del horario*/
+.horario {
+    /* Definimos el estilo del horario*/
 
     background-color: white;
     font-size: 1.2vw;
     /* Ya que las celdas empiezan en la hora que les marca el horario, 
     se alinea en top para que marque el principio de la celda*/
-    vertical-align: top; 
+    vertical-align: top;
 
 
 }
 
 /*Estilos de las celdas interiores*/
 
-tr { 
+tr {
 
-    height: 2.5%; /* Con esto conseguimos que la altura de las celdas
+    height: 2.5%;
+    /* Con esto conseguimos que la altura de las celdas
      sean la apropiada para la proporcion de la tabla*/
-
+    
 }
+
 
 td {
 
-    font-size: 60%; /* Para que los textos quepan en las celdas*/
-    background-color: rgb(14, 112, 129); /* Color de las celdas sin tutotia*/
+/* Para que los textos quepan en las celdas*/
+    font-size: 60%;
+ /* Color de las celdas sin tutotia*/   
+    background-color: rgb(14, 112, 129);
 
 }
 
-.recreo { /* Hacemos mas pequeñas las celdas de los recreos por que dura menos que un clase*/
+td div {
+
+    font-size: 100%;
+    max-height: 80%;
+    max-width: 80%;
+    margin: 0;
+
+
+}
+
+.recreo {
+    /* Hacemos mas pequeñas las celdas de los recreos por que dura menos que un clase*/
 
     height: 0.60%;
 
 }
 
-.recreo td { /* Color de fondo para las celdas de los recreos*/
+.recreo td {
+    /* Color de fondo para las celdas de los recreos*/
 
 
     background-color: white;
@@ -104,7 +128,7 @@ td {
 .diw {
 
     background-color: bisque;
-    
+
 
 }
 
@@ -149,7 +173,8 @@ td {
     background-color: rgb(194, 54, 54);
 }
 
-.tc { /* Transparencia para las tutorias colectivas*/
+.tc {
+    /* Transparencia para las tutorias colectivas*/
 
     opacity: 0.75;
 }
@@ -164,24 +189,30 @@ td {
 
 ul {
 
-    list-style: none; /* quitamos la decoracion de la lista */
-    
+    list-style: none;
+    /* quitamos la decoracion de la lista */
+
 
 }
 
-li::before { /* estilos para añadir el icono de email */
+li::before {
+    /* estilos para añadir el icono de email */
 
-    content: '\f0e0'; /* iocono de email */
-    font-family: "Font Awesome 6 free"; /* Le indicamos de que fuente */
-    font-weight: 900; /* Para que sea mas resaltado */ 
+    content: '\f0e0';
+    /* iocono de email */
+    font-family: "Font Awesome 6 free";
+    /* Le indicamos de que fuente */
+    font-weight: 900;
+    /* Para que sea mas resaltado */
     margin-right: 0.5em;
     margin-right: 10px;
     font-size: 1em;
-    
+
 }
 
-li, a { /* tamaño para el contenido de las listas */
+li,
+a {
+    /* tamaño para el contenido de las listas */
 
     font-size: 1vw;
 }
-
