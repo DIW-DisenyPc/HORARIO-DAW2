@@ -140,10 +140,22 @@ td {
 
 ul {
 
-    list-style-position: inside;
-    list-style-image: url("icono mail.png");
+   /* list-style-position: inside;
+    list-style-image: url("icono mail.png");*/
+    list-style: none;
     
 
+}
+
+li::before {
+
+    content: '\f0e0';
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    margin-right: 0.5em;
+    margin-right: 10px;
+    font-size: 1em;
+    
 }
 
 li, a {
