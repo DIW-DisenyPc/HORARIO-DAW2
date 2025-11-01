@@ -1,11 +1,13 @@
-/* definimod un estilo generico para toda la web que sera sobreescrito cuando haga falta*/
+/* definimos un estilo generico para toda la web que sera sobreescrito cuando haga falta*/
 
 * {
 
     font-family: sans-serif;
+
     /* El tamaño de la fuente lo marcomos con vw para que se ajuste en relacion a la ventan*/
     font-size: 2vw;
     text-align: center;
+
     /* Solo para que se vena las zonas blancas de la tabla*/
     background-color: rgb(212, 231, 247);
 
@@ -14,20 +16,20 @@
 
 h1 {
     /* Tamaño para todos los titulos principales que pudiera tener la web*/
-
     font-size: 2vw;
 }
 
 h3 {
     /* Tamaño para los subtitulo y titulos menores de la web*/
-
     font-size: 1vw;
 
 }
 
+/**************Estilos de la tabla********************************/
+
 .tabla,
 .lista {
-    /* Ancho para ambos divs*/
+    /* Ancho y centrado para ambos divs*/
     width: 60vw;
     margin: auto;
 
@@ -36,26 +38,21 @@ h3 {
 .tabla {
     /* Alto solo para el div de la tabla necesario 
     para que la tabla tenga la proporcion deseada*/
-
     height: 90vw;
 }
 
 table {
-
-    /*table-layout: fixed;  Funciona igual sin esata parte */
-
     /* centramso la tabla y le decimos que ocupe todo su padre, el div tabla*/
     margin: auto;
     height: 100%;
     width: 100%;
-    border-width: 2px;
-    
+    border-width: 2%;
+
 
 }
 
 th {
     /* Definimos las propiedades de la cabecera*/
-
     font-size: 1vw;
     background-color: white;
 
@@ -63,9 +60,9 @@ th {
 
 .horario {
     /* Definimos el estilo del horario*/
-
     background-color: white;
     font-size: 1.2vw;
+
     /* Ya que las celdas empiezan en la hora que les marca el horario, 
     se alinea en top para que marque el principio de la celda*/
     vertical-align: top;
@@ -73,52 +70,48 @@ th {
 
 }
 
-/*Estilos de las celdas interiores*/
+/**************Estilos de las celdas interiores********************************/
 
 tr {
-
-    height: 2.5%;
     /* Con esto conseguimos que la altura de las celdas
      sean la apropiada para la proporcion de la tabla*/
+    height: 2.5%;
     
+
 }
 
 
 td {
-
-/* Para que los textos quepan en las celdas*/
+    /* Para que los textos quepan en las celdas*/
     font-size: 60%;
- /* Color de las celdas sin tutotia*/   
+
+    /* Color de las celdas sin tutotia*/
     background-color: rgb(129, 186, 196);
 
 }
 
 td div {
-
+    /* definimos las propiedades de cada celda*/
     font-size: 100%;
     max-height: 80%;
     max-width: 80%;
     margin: 0;
 
-
 }
 
 .recreo {
     /* Hacemos mas pequeñas las celdas de los recreos por que dura menos que un clase*/
-
     height: 0.60%;
 
 }
 
 .recreo td {
     /* Color de fondo para las celdas de los recreos*/
-
-
     background-color: white;
 
 }
 
-/*-------Cada una de los diferentes modulos-------*/
+/************************Cada una de los diferentes modulos****************************-*/
 
 .dwes {
 
@@ -128,7 +121,6 @@ td div {
 .diw {
 
     background-color: bisque;
-
 
 }
 
@@ -175,38 +167,34 @@ td div {
 
 .tc {
     /* Transparencia para las tutorias colectivas*/
-
     opacity: 0.75;
 }
 
-/* Termina la tabla, empezamos con la lista */
+/**************************** Termina la tabla, empezamos con la lista ******************************/
 
-.lista {
-
-    margin-top: 2vw;
+ul {
+    /* quitamos la decoracion de la lista */
+    list-style: none;
 
 }
 
-ul {
-
-    list-style: none;
-    /* quitamos la decoracion de la lista */
-    margin: 0 25vw 5vw 0 ;
-
-    
-
-
+li{
+    /* alineación al 25% del viewport */
+    margin-left: 25vw;
 }
 
 li::before {
     /* estilos para añadir el icono de email */
 
-    content: '\f0e0';
     /* iocono de email */
-    font-family: "Font Awesome 6 free";
+    content: '\f0e0';
+    
     /* Le indicamos de que fuente */
-    font-weight: 900;
+    font-family: "Font Awesome 6 free";
+
     /* Para que sea mas resaltado */
+    font-weight: 900;
+    
     margin-right: 0.5em;
     margin-right: 10px;
     font-size: 1em;
@@ -216,8 +204,7 @@ li::before {
 li,
 a {
     /* tamaño para el contenido de las listas */
-
     font-size: 1vw;
     text-align: left;
-    
+
 }

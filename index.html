@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="styles.css" />
     <title>Horario 2º DAW</title>
+
     <!--Incluimos la fuente de los iconos-->
     <link
       rel="stylesheet"
@@ -19,12 +20,13 @@
 
     <div class="tabla">
       <table>
-        <!-- Empiza la tabla-->
+        <!--******************** Empiza la tabla*****************************************-->
 
         <thead>
-          <!-- Empiza la cabecera de la tabla-->
+          <!--*************** Empiza la cabecera de la tabla***********************-->
 
           <tr>
+            <!--hueco para las horas-->
             <th></th>
             <th>Lunes</th>
             <th>Martes</th>
@@ -47,15 +49,18 @@
           <!-- ************************************************************************************  -->
 
           <tr>
+            <!--La primera para las horas con clase horario para darle su propio css igual en todas las filas-->
             <td rowspan="2" class="horario">11:15</td>
-            <!--La primera para las horas con clase horario para darle su propio css-->
+            
             <td rowspan="2"></td>
             <td rowspan="2"></td>
             <td rowspan="2"></td>
-            <td rowspan="2" class="diw tc">DIW Carlos <br> Millan Belda</td>
             <!--Cada una de las tutorias, clase tc para dar transparencia-->
+            <td rowspan="2" class="diw tc">DIW Carlos <br> Millan Belda</td>
+            
             <td rowspan="2"></td>
           </tr>
+
           <tr></tr> <!-- Vacias para poder dividir las celdas en medias horas-->
 
           <!-- ************************************************************************************  -->
@@ -73,10 +78,12 @@
           <!-- ************************************************************************************  -->
 
           <tr class="recreo">
-            <!--Para los  poder darle su propio css-->
+            <!--Para darle a los recreos su propio css-->
+
             <td class="horario">13:05</td>
-            <td colspan="5">RECREO</td>
+
             <!-- Unimos todas las celdas de la fila recreo-->
+            <td colspan="5">RECREO</td>            
           </tr>
 
           <!-- ************************************************************************************  -->
@@ -107,8 +114,10 @@
 
           <tr>
             <td rowspan="2" class="horario">15:15</td>
-            <td rowspan="4" class="diw">DIW Carlos <br> Millan Belda</td>
+
             <!--Usamos rowspan para unir varias horas para una totoria-->
+            <td rowspan="4" class="diw">DIW Carlos <br> Millan Belda</td>
+            
             <td rowspan="2" class="sa tc">Sostenibilidad aplicada</td>
             <td rowspan="2" class="dwes tc">DWES  David Tur Sanmateo</td>
             <td rowspan="2"></td>
@@ -190,17 +199,24 @@
           </tr>
           <tr></tr>
         </tbody>
-        <!-- Termina el cuerpo de la tabla-->
+
+        <!--******************************** Termina el cuerpo de la tabla ********************************-->
       </table>
-      <!-- Fin de la tabla-->
+
+      <!-- **************************************Fin de la tabla *******************************************-->
     </div>
+
+    <!--div Para la lista de correos-->
     <div class="lista">
-      <!--div Para la lista de correos-->
+      
       <h3>Listado de correos de los profesores de las asignaturas</h3>
-      <ul>
-        <!--Usamos una lista no ordenada-->
+
+      <!--Usamos una lista no ordenada-->
+      <ul>        
         <li>
           Carlos Millan Belda (DIW)
+
+          <!-- Mail to en href para que abra el email-->
           <a href="mailto:c.millanbelda@edu.gva.es">c.millanbelda@edu.gva.es</a>
         </li>
         <li>
@@ -223,8 +239,6 @@
           José Manuel Gras (DWEC)
           <a href="mailto:jm.graslopez@edu.gva.es">jm.graslopez@edu.gva.es</a>
         </li>
-
-        <!--En cada elemento le añadimos una etiqueta a para poner el link solo a la parte de la direccion email-->
       </ul>
     </div>
   </body>
