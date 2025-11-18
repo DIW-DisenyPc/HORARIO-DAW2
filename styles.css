@@ -48,13 +48,12 @@ table {
     width: 100%;
     border-width: 2%;
 
-
 }
 
 th {
     /* Definimos las propiedades de la cabecera*/
     font-size: 1vw;
-    background-color: white;
+    background-color: white;/*color blanco*/
 
 }
 
@@ -77,7 +76,6 @@ tr {
      sean la apropiada para la proporcion de la tabla*/
     height: 2.5%;
     
-
 }
 
 
